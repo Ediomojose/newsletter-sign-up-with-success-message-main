@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+   
+      <section class="signup__container">
+        <picture>
+          <source
+            media="(min-width:700px)"
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+            class="desktop__img"
+          />
+          <img
+          src="./assets/images/illustration-sign-up-mobile.svg"
+          alt=""
+          srcset=""
+          class="mobile__img"
+        />
+        </picture>
+        <form method="dialog">
+          <h1 class="form__header">Stay updated!</h1>
+          <p class="form__paragraph">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="outline">
+            <li class="outline__text">
+              Product discovery and building what matters
+            </li>
+            <li class="outline__text">
+              Measuring to ensure updates are a success
+            </li>
+            <li class="outline__text">And much more!</li>
+          </ul>
+          <div class="label__error__text">
+            <label for="email__address">Email Address</label>
+            <span class="error__state__text"></span>
+          </div>
+          
+          <input
+            type="email"
+            name="email"
+            id="enail__address"
+            placeholder="email@company.com"
+          />
+          <button class="form__submit" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </section>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <dialog class="success__msg">
+      <div class="success__msg__container">
+        <img src="./assets/images/icon-success.svg" alt="" />
+        <h2 class="success__msg__head">
+          Thanks for subscribing!
+        </h2>
+        <p class="success__note">
+          A confirmation email has been sent to
+          <span id="user__email__address"></span>. Please open
+          it and click the button inside to confirm your subscription.
+        </p>
+        <button type="button" title="dismiss" class="dismiss__btn">Dismiss message</button>
+      </div>
+      
+    </dialog>
+    <!-- Success message end -->
+  </body>
+</html>
