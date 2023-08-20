@@ -20,11 +20,10 @@ Thanks for checking out this project.
 
 ## The challenge
 
-Your challenge is to build out this newsletter form and get it looking as close to the design as possible.
+This project focuses on building a newsletter form, that populate a sucess message as a pop-up. To implement this I use the HTML Modal Element which makes maipulation of pop-up modal easy, it also included a bit of javascript that triggers the pop-up modal to display when form is submitted.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Some of the basic functionality inplemented are:
 
-Your users should be able to:
 
 - Add their email and submit the form
 - See a success message with their email after successfully submitting the form
@@ -33,4 +32,3 @@ Your users should be able to:
   - The email address is not formatted correctly
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page.
-

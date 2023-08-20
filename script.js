@@ -1,10 +1,10 @@
 const pageBody = document.querySelector("body");
 const openModalBtn = document.querySelector(".form__submit");
-const successMessage = document.querySelector(".success__msg");
-const dismissSucessMsg = document.querySelector(".dismiss__btn");
-const successMsgEmail = document.querySelector("#user__email__address");
-let emailInput = document.querySelector("#enail__address");
+let emailInput = document.querySelector("#email__address");
 let errorStateText = document.querySelector(".error__state__text");
+const successMessage = document.querySelector(".success__msg");
+const successMsgEmail = document.querySelector("#user__email__address");
+const dismissSucessMsgBtn = document.querySelector(".dismiss__btn");
 
 const emptyFieldMsg = "Input field can not be blank";
 
@@ -20,6 +20,6 @@ openModalBtn.addEventListener("click", function () {
   }
 });
 
-dismissSucessMsg.addEventListener("click", function () {
+dismissSucessMsgBtn.addEventListener("click", function () {
   successMessage.close();
 });
