@@ -122,6 +122,7 @@ form button {
   border-radius: 0.4rem;
   cursor: pointer;
   box-shadow: 1px 2px 5px var(--grey);
+  transition: all 5s ease;
 }
 
 form button:hover{
@@ -135,7 +136,6 @@ form button:hover{
   padding: 3rem 2rem;
   border: none;
   border-radius: 1rem;
-  transition: 5000ms;
 }
 
 dialog::backdrop {
